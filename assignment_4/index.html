@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>音声チャット掲示板</title>
+    <link rel="resetsheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- JQuery -->
+
+    <!--** 以下Firebase **-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- 6.6.1に該当する箇所はfirebaseのバージョンですので更新されるたびに随時変わります🤗 -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+</head>
+
+
+
+<body>
+    <header class="header">
+        <h1>掲示板</h1>
+    </header>
+
+    <div class="wrap">
+        <div class="left">
+            <div class="head">
+                <input type="text" class="name-input" placeholder="Name" id="username">
+                <textarea name="post" id="textbox" class="input" style="width:500px" rows="10"
+                    placeholder="Topicを記入しよう"></textarea>
+                <div class="btns">
+                    <button class="head-btn" id="thread">Start Thread</button>
+                    <button class="head-btn clear1">Clear</button>
+                </div>
+            </div>
+            <hr>
+            <div class="add-card">
+                <!-- <div class="topic-card">
+                    <div class="yokonarabi">
+                        <i class="fas fa-user-circle fa-2x"></i>
+                        <p class="card-name">Name</p>
+                    </div>
+                    <div class="card-contents">
+                        <h2>
+                            Topic
+                        </h2>
+                    </div>
+                    <div class="topic-data">
+                        <p class="card-text">comments</p>
+                        <p class="card-text">Date</p>
+                    </div>
+                </div>
+                <div class="topic-card">
+                    <div class="yokonarabi">
+                        <i class="fas fa-user-circle fa-2x"></i>
+                        <p class="card-name">Name</p>
+                    </div>
+                    <div class="card-contents">
+                        <h2>
+                            Topic
+                        </h2>
+                    </div>
+                    <div class="topic-data">
+                        <p class="card-text">comments</p>
+                        <p class="card-text">Date</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="line">
+
+        </div>
+
+        <div id="right">
+            <div class="topic-card">
+                <div class="audio-wrapper">
+                    <div class="yokonarabi">
+                        <i class="far fa-user-circle fa-2x"></i>
+                        <p class="card-name right-name">Name</p>
+                    </div>
+                    <div class="audio-btn">
+                        <button id="start-btn" class="speak">
+                            <i class="fas fa-microphone fa-4x mic"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-contents" id="right-card">
+                    <h2>
+                        Topic / Contents
+                    </h2>
+                </div>
+                <div class="topic-data">
+                    <p class="card-text right-comment">comments</p>
+                    <p class="card-text right-date">Date</p>
+                </div>
+
+                <!-- <hr> -->
+                <!-- <textarea class="input" name="reply" id="reply-box" style="width:95%" rows="10"
+                    placeholder="返信入力"></textarea>
+                <div class="btns">
+                    <button class="head-btn" id="reply"> Reply </button>
+                    <button class="head-btn click2"> Clear </button>
+                </div> -->
+                <hr>
+                <div class="comment-box">
+                    <!-- <div class="yokonarabi">
+                        <i class="far fa-user-circle fa-3x"></i>
+                        <div class="arrow">
+                            <p class="reply-content">面白いね！</p>
+                            <p class="reply-date">2021/08/21 10:48</p>
+                        </div>
+
+                    </div>
+                    <div class="yokonarabi">
+                        <i class="far fa-user-circle fa-3x"></i>
+                        <div class="arrow">
+                            <p class="reply-content">いいですね！</p>
+                            <p class="reply-date">2021/08/26 21:51</p>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+
+        <script src="./index.js"></script>
+        <script>
+
+
+
+
+
+
+        </script>
+
+
+</body>
+
+</html>

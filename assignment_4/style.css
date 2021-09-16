@@ -1,0 +1,176 @@
+/* 全体レイアウト */
+body {
+    background-color: rgb(14, 29, 29);
+    color:white;
+}
+
+.wrap{
+    display:flex;
+justify-content: center;
+   
+}
+
+.left{
+    width: 550px;
+}
+#right {
+    width : 550px;
+
+}
+
+.line {
+    margin : 0 1rem;
+    width:4px;
+    background-color:lightblue;
+}
+/* チャット入力部分 */
+
+header{
+    background-color: lightblue;
+    color:black;
+    font-weight:200;
+    text-align:center
+}
+
+h1{
+    font-size:45px;
+    color:darkcyan;
+    padding: 10px;
+}
+
+.head {
+    display:flex;
+    flex-flow:column;
+    width: 510px;
+    margin:10px 10px;
+
+}
+
+.input {
+    margin: 10px 0 5px 5px;
+    border:lightgray solid;
+    padding:10px 10px;
+    line-height: 20px;
+}
+
+.name-input{
+    width: 150px;
+    margin:10px 0 5px 5px;
+    border:lightgray solid;
+    padding: 5px 5px;
+
+}
+
+.btns{
+    display:flex;
+    justify-content:flex-end;
+}
+
+.head-btn {
+    margin: 5px 5px ;
+    padding : 5px 5px;
+}
+
+
+/* トピックカードの表示 */
+
+.topic-card{
+    width : 510px;
+    border-radius: 20px;
+    background-color:darkcyan;
+    padding:10px 10px;
+    margin:10px 0 0 15px;
+    overflow-wrap: break-word;
+}
+
+.fa-user-circle {
+    height:25px;
+    width:25px;
+}
+
+.yokonarabi {
+    display:flex;
+    justify-content: left;
+}
+
+#start-btn {
+    background-color: rgba(0, 139, 139, 0.651);
+    color: black;
+    border : none;
+    width : 55px;
+    height : 55px;
+}
+
+.audio-wrapper {
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.card-name {
+  margin:5px 0 0 10px ; 
+  font-weight:200; 
+}
+
+.topic-data{
+    display:flex;
+    justify-content: flex-end;
+
+}
+.card-text{
+    margin: 5px 5px;
+}
+
+/* 右の詳細画面 */
+
+#right {
+    display:none;
+}
+
+/* コメント */
+.arrow{
+    position:relative;
+    width:400px;
+    background:#E6E6E6;
+    padding:10px;
+    text-align:left;
+    color:#333333;
+    font-size:14px;
+    font-weight:bold;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    margin:5px 0 5px 45px;
+}
+.arrow:after{
+    border: solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    pointer-events:none;
+    position:absolute;
+    border-color: rgba(230, 230, 230, 0);
+    border-top-width:10px;
+    border-bottom-width:10px;
+    border-left-width:20px;
+    border-right-width:20px;
+    margin-top: -10px;
+    border-right-color:#E6E6E6;
+    right:100%;
+    top:50%;
+}
+.reply-content {
+    text-align:left;
+    margin: 3px 0;
+}
+.reply-date {
+    text-align:right;
+    color:darkgray;
+    margin: 1px 0;
+    font-size:9px;
+}
+
+.reply-comment {
+    display:flex;
+    
+}
