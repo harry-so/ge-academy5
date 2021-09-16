@@ -1,6 +1,6 @@
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCjfCru4dPRNixeoNpXRUh0v4qXbsy2x6w",
+    apiKey: "",
     authDomain: "dev21chat-harry.firebaseapp.com",
     databaseURL: "https://dev21chat-harry-default-rtdb.firebaseio.com/",
     projectId: "dev21chat-harry",
